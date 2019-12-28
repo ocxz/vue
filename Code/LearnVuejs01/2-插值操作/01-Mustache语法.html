@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="app">
+			{{msg}}
+			
+			<h1>{{name + "-" + age}}</h1>
+			<h1>{{name}} --- </->{{age}}</h1>
+		</div>
+
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+					msg: "hello",
+					name: "张三",
+					age: 18,
+				}
+			})
+		</script>
+	</body>
+
+</html>

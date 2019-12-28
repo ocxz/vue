@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="app">
+			<img v-bind:src="imgURL" />
+			<h3><a v-bind:href="linkURL">{{linkText}}</a></h3>
+			<h3><a :href="linkURL">{{linkText}}</a></h3>
+		</div>
+
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+					imgURL: "http://file02.16sucai.com/d/file/2015/0128/8b0f093a8edea9f7e7458406f19098af.jpg",
+					linkURL: "http://www.baidu.com",
+					linkText: "百度一下",
+				}
+			})
+		</script>
+	</body>
+
+</html>
