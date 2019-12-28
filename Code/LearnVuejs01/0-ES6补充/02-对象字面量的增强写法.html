@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			let name = 'cxz';
+			const age = 18;
+			const height = 1.88;
+			
+			// 属性的普通写法
+			const obj = {
+				name: name,
+				age: age,
+				height: height
+			}
+			name= '读到的';
+			console.log(obj);
+			
+			// ES6属性的增强写法
+			const obj2 = {
+				name,
+				age,
+				height
+			}
+			name= 'fasdfa';
+			console.log(obj2);
+		</script>
+	</body>
+</html>

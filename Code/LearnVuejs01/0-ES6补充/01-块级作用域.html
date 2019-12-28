@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<button>按钮一</button>
+	<button>按钮二</button>
+	<button>按钮三</button>
+	<button>按钮四</button>
+	<button>按钮五</button>
+	
+	<body>
+
+		<script type="text/javascript">
+					// ES5
+//				var btns = document.getElementsByTagName('button');
+//				for(var i = 0; i < btns.length; i++){
+//					(function(num) {
+//						btns[i].addEventListener('click', function(){
+//						console.log('第' + (num+1) + '个按钮被点击了');})
+//					})(i)		
+//				}
+					// ES6
+					const btns = document.getElementsByTagName('button');
+					for(let i =0; i < btns.length; i++) {
+						btns[i].addEventListener('click', function(){
+							console.log('第' + (i+1) + '个按钮被点击了');
+						})
+					}
+		</script>
+	</body>
+
+</html>
