@@ -19,7 +19,9 @@
 			<button @click="btnClick2">按钮2</button>
 
 			<!--方法定义时，如果需要event对象，也需要其他参数-->
-			<button @click="btnClick3">按钮3</button>
+			<button @click="btnClick3('点击了第三个按钮',$event)">按钮3</button>
+			
+			
 			<button>按钮4</button>
 		</div>
 

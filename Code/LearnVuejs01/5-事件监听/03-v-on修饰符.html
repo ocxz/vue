@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- .stop修饰符的使用 -->
+			<div @click="divClick">
+				aaa
+				<button @click.stop="btnClick">按钮</button>
+			</div>
+		</div>
+		
+		<!-- .prevent修饰符的使用 -->
+		
+
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+					msg: "",
+				},
+				methods: {
+					btnClick() {
+						console.log('btnClick');
+					},
+					divClick() {
+						console.log('divClick');
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>
